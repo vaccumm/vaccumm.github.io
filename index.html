@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Falling Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <h1>Catch the Falling Objects</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="showHighScores()">High Scores</button>
+    </div>
+    
+    <div id="gameCanvasContainer" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="game-over" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="final-score">Score: 0</p>
+            <button onclick="restartGame()">Restart</button>
+            <button onclick="showMenu()">Main Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
