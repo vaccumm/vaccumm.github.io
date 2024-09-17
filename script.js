@@ -15,7 +15,7 @@ const basketWidth = 80; // Smaller basket
 const basketHeight = 20;
 const objectSize = 30;
 const initialFallSpeed = 5; // Starting speed
-const maxFallSpeed = 20; // Maximum speed cap
+const maxFallSpeed = 30; // Increased maximum speed cap
 const basketCapacity = 3;
 const bombProbability = 0.3; // Probability for bombs (30%)
 let basketX = canvas.width / 2 - basketWidth / 2;
@@ -164,7 +164,7 @@ function updateFallingObjects() {
 
 function increaseDifficulty() {
     if (objectFallSpeed < maxFallSpeed) {
-        objectFallSpeed += 0.2; // Increase speed at a faster rate
+        objectFallSpeed += 0.3; // Faster speed increase
     }
 }
 
